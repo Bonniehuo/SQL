@@ -1,0 +1,8 @@
+The SELECT DISTINCT statement is used to return only distinct (different) values.
+
+SELECT DISTINCT Country FROM Customers;
+
+SELECT COUNT(DISTINCT Country) FROM Customers;
+
+SELECT Count(*) AS DistinctCountries
+FROM (SELECT DISTINCT Country FROM Customers);
